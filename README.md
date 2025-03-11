@@ -28,7 +28,7 @@ This repository is a starter kit for developers who want to build plugins for Ca
 ### Prerequisites
 
 - Node.js (v18+)
-- npm or yarn
+- npm
 - Basic understanding of TypeScript and blockchain concepts
 
 ### Installation
@@ -194,5 +194,5 @@ When submitting your pull request, please include:
 ---
 
 <div align="center">
-  <p>Building on SEI with Cambrian ❤️</p>
+  <p>Building on SEI with Cambrian </p>
 </div> 
