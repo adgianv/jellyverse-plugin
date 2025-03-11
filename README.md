@@ -35,7 +35,7 @@ This repository is a starter kit for developers who want to build plugins for Ca
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/cambrian-protocol/cambrian-plugin.git
+   git clone git@github.com:CambrianAgents/cambrian-plugin.git
    cd cambrian-plugin
    ```
 
