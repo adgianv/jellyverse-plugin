@@ -157,6 +157,96 @@ export async function stakeTokens(
 }
 ```
 
+## 🧪 Testing Your Plugin
+
+### 1. Set Up Environment Variables
+
+Before testing your plugin, you need to set up your environment variables:
+
+1. Copy the example environment file to create your own `.env` file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Open the `.env` file and add your SEI wallet private key:
+   ```
+   SEI_PRIVATE_KEY=your_private_key_here
+   ```
+   
+   > ⚠️ **IMPORTANT**: Never commit your `.env` file with your private key to version control.
+
+### 2. Import Your Tool in SeiAgentKit
+
+After creating your plugin, you need to integrate it with the SeiAgentKit class. Edit `src/agent/index.ts`:
+
+```typescript
+// 1. Import your plugin function(s)
+import { yourPluginName } from '../tools/your-plugin-name';
+
+export class SeiAgentKit {
+  // Existing properties and methods...
+  
+  // 2. Add a method that wraps your plugin function
+  async yourPluginMethod(param1: string): Promise<any> {
+    return yourPluginName(this, param1);
+  }
+}
+```
+
+### 3. Add a Test Case
+
+Update the test file at `test/test.ts` to call your new method:
+
+```typescript
+import { SeiAgentKit } from "../src";
+import * as dotenv from "dotenv";
+
+dotenv.config();
+
+// Environment validation and setup...
+
+const agent = new SeiAgentKit(
+  process.env.SEI_PRIVATE_KEY!,
+  {
+    OPENAI_API_KEY: "",
+  },
+);
+
+async function main(contract?: string) {
+  try {
+    // Test your plugin function
+    console.log("Testing your plugin...");
+    const result = await agent.yourPluginMethod("test parameter");
+    console.log("Result:", result);
+  } catch (err) {
+    console.error("Error testing plugin:", err);
+    return null;
+  }
+}
+
+// Execute the test...
+```
+
+### 4. Run the Test
+
+Execute your test using the provided npm script:
+
+```bash
+npm run test
+```
+
+This will:
+- Run your test.ts file with tsx
+- Execute your plugin function
+- Display the results in the console
+
+### 5. Debugging Tips
+
+- Check console logs for any errors
+- Verify that your method is correctly importing and calling your plugin function
+- Ensure all required parameters are passed correctly
+- For blockchain interactions, consider using a testnet environment first
+
 ## 🔄 Plugin Integration Flow
 
 ```
