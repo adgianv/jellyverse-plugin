@@ -28,7 +28,6 @@ This repository is a starter kit for developers who want to build plugins for Ca
 
 - Node.js (v18+)
 - npm
-- npm
 - Basic understanding of TypeScript and blockchain concepts
 
 ### Installation
