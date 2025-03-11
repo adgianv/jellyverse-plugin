@@ -16,7 +16,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" alt="Version">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
-  <i>Developed with ❤️ by <b><a href="https://cambrian.dev">Cambrian</a></b></i>
 </p>
 
 ## 🚀 Introduction
@@ -29,17 +28,22 @@ This repository is a starter kit for developers who want to build plugins for Ca
 
 - Node.js (v18+)
 - npm
+- npm
 - Basic understanding of TypeScript and blockchain concepts
 
 ### Installation
 
-1. Clone this repository:
+1. Fork the repository:
+   - Visit https://github.com/cambrian-protocol/cambrian-plugin
+   - Click the "Fork" button in the top right to create your personal copy
+
+2. Clone your forked repository:
    ```bash
-   git clone git@github.com:CambrianAgents/cambrian-plugin.git
+   git clone https://github.com/YOUR-USERNAME/cambrian-plugin.git
    cd cambrian-plugin
    ```
 
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    npm install
    ```
@@ -159,32 +163,30 @@ export async function stakeTokens(
 ```
 ┌───────────────┐     ┌───────────────┐     ┌───────────────┐
 │     Step 1    │     │     Step 2    │     │     Step 3    │
-│  Run Plugin   │────▶│  Implement    │────▶│  Add More     │
-│  Generator    │     │  Functions    │     │  Functions    │
+│  Fork & Clone │────▶│  Run Plugin   │────▶│  Implement    │
+│  Repository   │     │  Generator    │     │  Functions    │
 └───────────────┘     └───────────────┘     └───────────────┘
                                                     │
                                                     ▼
                       ┌───────────────┐     ┌───────────────┐
                       │     Step 5    │     │     Step 4    │
-                      │  Test your    │◀────│  Document     │
-                      │    plugin     │     │  Your Plugin  │
+                      │  Submit Pull  │◀────│  Test Your    │
+                      │  Request      │     │  Plugin       │
                       └───────────────┘     └───────────────┘
 ```
 ## 📤 Submitting Your Plugin
 
 Once you've completed and tested your plugin, submit it for inclusion in the Cambrian ecosystem:
 
-1. **Create a fork** of the cambrian-plugin repository
-2. **Push your changes** to your fork
-3. **Submit a pull request** with a clear description of your plugin's functionality and use cases
+1. **Push your changes** to your fork
+2. **Submit a pull request** with a clear description of your plugin's functionality and use cases
 
 Our team will review your submission and handle the integration process. We may reach out for clarification or suggest improvements before merging.
 
 When submitting your pull request, please include:
 - A brief description of what your plugin does
 - Any dependencies it requires
-- Example usage scenarios
-- Testing results
+
 
 ## 🔗 Links
 
