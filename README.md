@@ -33,8 +33,7 @@ This repository is a starter kit for developers who want to build plugins for Ca
 
 ### Installation
 
-1. Fork the repository:
-   - Visit https://github.com/cambrian-protocol/cambrian-plugin
+1. Fork this repository:
    - Click the "Fork" button in the top right to create your personal copy
 
 2. Clone your forked repository:
