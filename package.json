@@ -1,0 +1,45 @@
+{
+  "name": "cambrian-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "create-your-plugin": "tsx scripts/create-plugin.ts",
+    "test": "tsx test/index.ts"
+  },
+  "keywords": [
+    "sei",
+    "sei-agent-kit",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sei-js/evm": "^2.0.0",
+    "ai": "^4.1.44",
+    "axios": "^1.8.1",
+    "chart.js": "^4.4.8",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "viem": "^2.23.3",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.6",
+    "@types/chai": "^5.0.1",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
