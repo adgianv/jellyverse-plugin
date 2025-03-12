@@ -23,9 +23,11 @@
     "axios": "^1.8.1",
     "chart.js": "^4.4.8",
     "dotenv": "^16.4.7",
-    "ethers": "^6.13.5",
-    "viem": "^2.23.3",
-    "openai": "^3.2.1"
+    "ethers": "5.7.2",
+    "lodash.map": "^4.6.0",
+    "lodash.sortby": "^4.7.0",
+    "openai": "^3.2.1",
+    "viem": "^2.23.3"
   },
   "devDependencies": {
     "@types/bn.js": "^5.1.6",

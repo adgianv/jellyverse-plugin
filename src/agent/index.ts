@@ -8,7 +8,7 @@ import {
 } from "viem";
 import { sei } from 'viem/chains';
 import { privateKeyToAccount } from 'viem/accounts';
-import { get_erc20_balance, erc20_transfer } from '../tools';
+import { get_erc20_balance, erc20_transfer, joinPool } from '../tools';
 import { Config } from '../types';
 
 export class SeiAgentKit {
@@ -53,4 +53,16 @@ export class SeiAgentKit {
     return erc20_transfer(this, amount, recipient, ticker);
   }
 
+  async joinPool(
+    poolId: string,
+    tokensForPool: {
+      tokenSymbol: string;
+      address: string;
+      amount: number;
+      weight: number;
+      decimals: number;
+    }[]
+  ): Promise<string> {
+    return joinPool(this, poolId, tokensForPool);
+  }
 }
